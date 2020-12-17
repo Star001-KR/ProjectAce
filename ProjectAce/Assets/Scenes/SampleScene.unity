@@ -282,6 +282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1: {fileID: 2071649292}
   Player2: {fileID: 1396223232}
+  ShadowObject_Player1: {fileID: 1086084562}
+  ShadowObject_Player2: {fileID: 1580342201}
   UIButton: {fileID: 67633281}
 --- !u!4 &468462348
 Transform:
@@ -653,6 +655,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850354303}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1086084562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7100461501582080898, guid: f68ea1270e82049c488b14aacb7b836e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7827207394351751702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1396223230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -731,6 +739,12 @@ Transform:
 --- !u!1 &1396223232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7827207395244736026, guid: f68ea1270e82049c488b14aacb7b836e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1396223230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1580342201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7100461501582080898, guid: f68ea1270e82049c488b14aacb7b836e,
     type: 3}
   m_PrefabInstance: {fileID: 1396223230}
   m_PrefabAsset: {fileID: 0}
