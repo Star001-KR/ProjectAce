@@ -64,7 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\GameRules.cs" />
+    <Compile Include="Assets\Script\RobbyRules.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/2019.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

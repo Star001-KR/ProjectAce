@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{1351B61E-FFC8-0FDD-DF67-DC4B58C221FF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NewBehaviourScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/RobbyRules.cs">
     <Files>
-      <File FileName="Assets/NewBehaviourScript.cs" Line="27" Column="33" />
+      <File FileName="Assets/Script/GameRules.cs" Line="29" Column="33" />
+      <File FileName="Assets/RobbyRules.cs" Line="23" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectAce" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="NewBehaviourScript.cs" selected="True" />
+              <Node name="Script" expanded="True">
+                <Node name="RobbyRules.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -17,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="37f24d57-d240-4d03-ad48-44cb5dabfd89" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="383da92b-24e2-439c-9dd3-359dc6ba9dc3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
