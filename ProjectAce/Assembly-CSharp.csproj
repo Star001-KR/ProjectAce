@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FieldState.cs" />
     <Compile Include="Assets\Script\GameRules.cs" />
     <Compile Include="Assets\Script\RobbyRules.cs" />
     <Reference Include="UnityEngine">
