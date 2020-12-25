@@ -1,16 +1,25 @@
 ﻿<Properties StartupConfiguration="{1351B61E-FFC8-0FDD-DF67-DC4B58C221FF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FieldState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Rules/RobbyRules.cs">
     <Files>
-      <File FileName="Assets/Script/GameRules.cs" Line="29" Column="33" />
-      <File FileName="Assets/FieldState.cs" Line="22" Column="1" />
+      <File FileName="Assets/Script/GameRules.cs" Line="42" Column="1" />
+      <File FileName="Assets/Script/FieldState.cs" Line="20" Column="6" />
+      <File FileName="Assets/Script/CommonEnum.cs" Line="13" Column="2" />
+      <File FileName="Assets/Script/UIBGColor.cs" Line="7" Column="2" />
+      <File FileName="Assets/Script/Rules/RobbyRules.cs" Line="31" Column="40" />
+      <File FileName="Assets/Script/FieldSetting.cs" Line="24" Column="1" NotebookId="1" />
+      <File FileName="Assets/Script/TEMPUserDB.cs" Line="46" Column="21" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectAce" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Script" expanded="True" />
-              <Node name="FieldState.cs" selected="True" />
+              <Node name="Script" expanded="True">
+                <Node name="Rules" expanded="True">
+                  <Node name="RobbyRules.cs" selected="True" />
+                </Node>
+                <Node name="UI" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -19,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="51c770c8-1616-4cb1-8cad-d6802cf52ee0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ac2fd3cc-f3a6-418e-8a8d-316b9ed7937b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
