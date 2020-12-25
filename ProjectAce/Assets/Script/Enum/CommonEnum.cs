@@ -8,6 +8,8 @@ namespace CommonEnum
     {
         Empty = 0,
         Ally,
-        Enemy
+        Enemy,
+        Enemy_Start,
+        Enemy_End
     }
 }

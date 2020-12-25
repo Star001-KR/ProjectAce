@@ -60,7 +60,9 @@ public class FieldState : MonoBehaviour
             else if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Ally)
                 transform.GetComponent<MeshRenderer>().material = fieldMaterial[1];
 
-            else if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy)
+            else if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy
+                  || TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_Start
+                  || TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_End)
                 transform.GetComponent<MeshRenderer>().material = fieldMaterial[2];
 
             else
