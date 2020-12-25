@@ -91,7 +91,7 @@ Material:
     - _UseUIAlphaClip: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.6019556, g: 0.79216224, b: 0.98234665, a: 1}
+    - _Color: {r: 0.5941126, g: 0.7803974, b: 0.9666606, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
