@@ -5,25 +5,28 @@ using CommonEnum;
 
 public static class TEMPUserDB
 {
+    public static int[] startPoint_Player1 = new int[2] { 0, 0 };
+    public static int[] endPoint_Player1 = new int[2] { 0, 1 };
     public static EFieldState[,] FieldMap_Player1 = new EFieldState[7, 7]
     {
+        {EFieldState.Enemy_Start, EFieldState.Enemy_End, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty}
+        {EFieldState.Ally, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty}
     };
 
-
+    public static int[] startPoint_Player2 = new int[2] { 0, 0 };
+    public static int[] endPoint_Player2 = new int[2] { 1, 0 };
     public static EFieldState[,] FieldMap_Player2 = new EFieldState[7, 7]
     {
+        {EFieldState.Enemy_Start, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
+        {EFieldState.Enemy_End, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
+        {EFieldState.Empty, EFieldState.Ally, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty}
     };
