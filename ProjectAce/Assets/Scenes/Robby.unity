@@ -1007,6 +1007,11 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1587977891390854972, guid: 03b3343a1189e418d8642863af7878c7,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2121406727217782281, guid: 03b3343a1189e418d8642863af7878c7,
         type: 3}
       propertyPath: m_Color.b

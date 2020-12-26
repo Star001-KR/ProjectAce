@@ -70,6 +70,7 @@
     <Compile Include="Assets\Script\Field\PlayerFieldDeck.cs" />
     <Compile Include="Assets\Script\Rules\GameRules.cs" />
     <Compile Include="Assets\Script\Rules\RobbyRules.cs" />
+    <Compile Include="Assets\Script\UI\ButtonFieldUnit.cs" />
     <Compile Include="Assets\Script\UI\UIBGColor.cs" />
     <Compile Include="Assets\Script\UI\UITab.cs" />
     <Reference Include="UnityEngine">

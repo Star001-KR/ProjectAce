@@ -10,6 +10,7 @@ public class UITab : MonoBehaviour
     public ETabButtonState[] TabButtonState;
     public Material material_Select;
     public Material material_UnSelect;
+    public int selectTabNum;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +29,14 @@ public class UITab : MonoBehaviour
         for(int Num = 0; Num < TabButton.Length; Num++)
         {
             if (TabButtonState[Num] == ETabButtonState.Select)
+            {
+                selectTabNum = Num;
                 TabButton[Num].GetComponent<Image>().material = material_Select;
+            }
+
             else if (TabButtonState[Num] == ETabButtonState.Unselect)
                 TabButton[Num].GetComponent<Image>().material = material_UnSelect;
+
             else
                 Debug.Log(transform.name + " TabButtonRefresh Function Error!");
         }

@@ -33,10 +33,10 @@ public static class TEMPUserDB
 
     public static EFieldState GetFieldState(string PlayerName, int PosX, int PosY)
     {
-        if (PlayerName == "Player1")
+        if (PlayerName == "Player1" || PlayerName == (0).ToString())
             return FieldMap_Player1[PosX, PosY];
 
-        else if (PlayerName == "Player2")
+        else if (PlayerName == "Player2" || PlayerName == (1).ToString())
             return FieldMap_Player2[PosX, PosY];
 
         else
