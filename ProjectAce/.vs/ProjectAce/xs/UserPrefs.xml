@@ -1,24 +1,25 @@
-﻿<Properties StartupConfiguration="{1351B61E-FFC8-0FDD-DF67-DC4B58C221FF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Field/FieldState.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Enum/CommonEnum.cs">
     <Files>
-      <File FileName="Assets/Script/Rules/RobbyRules.cs" Line="31" Column="40" />
-      <File FileName="Assets/Script/Enum/CommonEnum.cs" />
+      <File FileName="Assets/Script/Field/FieldSetting.cs" Line="22" Column="24" />
+      <File FileName="Assets/Script/Rules/RobbyRules.cs" />
       <File FileName="Assets/Script/Rules/GameRules.cs" />
-      <File FileName="Assets/Script/Field/FieldState.cs" Line="25" Column="24" />
+      <File FileName="Assets/Script/Field/FieldState.cs" Line="14" Column="1" />
+      <File FileName="Assets/Script/Enum/CommonEnum.cs" Line="15" Column="2" />
       <File FileName="Assets/Script/Enum/TEMPUserDB.cs" Line="34" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProjectAce" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Script" expanded="True">
-                <Node name="Enum" expanded="True" />
-                <Node name="Field" expanded="True" />
-                <Node name="Rules" expanded="True">
-                  <Node name="RobbyRules.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Script" expanded="True">
+                  <Node name="Enum" expanded="True">
+                    <Node name="CommonEnum.cs" selected="True" />
+                  </Node>
+                  <Node name="Field" expanded="True" />
                 </Node>
-                <Node name="UI" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +29,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f461b7e-f04a-4541-8dd0-a63eecca5072" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

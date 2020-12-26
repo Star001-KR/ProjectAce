@@ -11,7 +11,7 @@ public class FieldState : MonoBehaviour
     private FieldSetting PlayerFieldSetting;
     private string Player;
     public Material[] fieldMaterial = new Material[3];
-    
+
     // Start is called before the first frame update
     void Start()
     {
