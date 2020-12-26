@@ -8,7 +8,7 @@ public class FieldState : MonoBehaviour
     private GameObject ParentObejct;
     private int ParentObejctNum;
     private int ObjectNum;
-    private FieldSetting PlayerFieldSetting;
+    private PlayerFieldDeck fieldDeck;
     private string Player;
     public Material[] fieldMaterial = new Material[3];
 
@@ -36,7 +36,7 @@ public class FieldState : MonoBehaviour
     void Init()
     {
         ParentObejct = transform.parent.gameObject;
-        PlayerFieldSetting = ParentObejct.transform.parent.GetComponent<FieldSetting>();
+        fieldDeck = ParentObejct.transform.parent.GetComponent<PlayerFieldDeck>();
 
         Player = ParentObejct.transform.parent.parent.name;
     }
@@ -54,15 +54,15 @@ public class FieldState : MonoBehaviour
     {
         if (Player == "Player1" || Player == "Player2")
         {
-            if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Empty)
+            if (fieldDeck.GetFieldMap(ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Empty)
                 transform.GetComponent<MeshRenderer>().material = fieldMaterial[0];
 
-            else if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Ally)
+            else if (fieldDeck.GetFieldMap(ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Ally)
                 transform.GetComponent<MeshRenderer>().material = fieldMaterial[1];
 
-            else if (TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy
-                  || TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_Start
-                  || TEMPUserDB.GetFieldState(Player, ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_End)
+            else if (fieldDeck.GetFieldMap(ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy
+                  || fieldDeck.GetFieldMap(ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_Start
+                  || fieldDeck.GetFieldMap(ParentObejctNum - 1, ObjectNum - 1) == EFieldState.Enemy_End)
                 transform.GetComponent<MeshRenderer>().material = fieldMaterial[2];
 
             else

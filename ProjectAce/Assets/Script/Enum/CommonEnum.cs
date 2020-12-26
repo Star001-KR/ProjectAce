@@ -12,4 +12,11 @@ namespace CommonEnum
         Enemy_Start,
         Enemy_End
     }
+
+    public enum ETabButtonState
+    {
+        Unselect = 0,
+        Select
+    }
+
 }
