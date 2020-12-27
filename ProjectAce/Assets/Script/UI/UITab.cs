@@ -11,6 +11,8 @@ public class UITab : MonoBehaviour
     public Material material_Select;
     public Material material_UnSelect;
     public int selectTabNum;
+    public GameObject BGObject;
+    public GameObject SettingUI;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,13 @@ public class UITab : MonoBehaviour
                 TabButtonState[Num] = ETabButtonState.Select;
             else
                 TabButtonState[Num] = ETabButtonState.Unselect;
+        }
+
+        if (selectTabNum != _Index)
+        {
+            BGObject.GetComponent<UIBGColor>().ReverseColor();
+            TabButtonRefresh();
+            SettingUI.GetComponent<DeckSettingInit>().TryDeckSettingInit();
         }
 
         TabButtonRefresh();

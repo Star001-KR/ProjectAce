@@ -41,7 +41,7 @@ public class UIBGColor : MonoBehaviour
             for (int Num = 0; Num < 3; Num++)
             {
                 RGB[Num] += changeValue[Num];
-                if (RGB[Num] > 254)
+                if (RGB[Num] > 250)
                     colorSwitch = false;
             }
         }
@@ -50,11 +50,20 @@ public class UIBGColor : MonoBehaviour
             for (int Num = 0; Num < 3; Num++)
             {
                 RGB[Num] -= changeValue[Num];
-                if (RGB[Num] < 1)
+                if (RGB[Num] < 37)
                     colorSwitch = true;
             }
         }
 
         transform.GetComponent<Image>().material.color = SetColor(RGB[0] / 255, RGB[1] / 255, RGB[2] / 255);
+    }
+
+    public void ReverseColor()
+    {
+        RGB[0] = 250 - RGB[0];
+        RGB[1] = 250 - RGB[1];
+        RGB[2] = 250 - RGB[2];
+
+        RefreshColor();
     }
 }

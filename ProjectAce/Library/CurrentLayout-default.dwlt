@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 164
+  controlID: 18
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 442}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 37
+  controlID: 80
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 477, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 88
+  controlID: 123
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 477, y: 342}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 87
+  controlID: 122
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 910, y: 442}
   m_MaxSize: {x: 22005, y: 10021}
   vertical: 0
-  controlID: 36
+  controlID: 79
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,7 +400,7 @@ MonoBehaviour:
     height: 395
   m_ViewDataDictionary: {fileID: 0}
   m_VertSplit:
-    ID: 2526
+    ID: 22711
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: bb000000bb000000
@@ -436,16 +436,16 @@ MonoBehaviour:
       type: {class: CPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor}
       data:
         m_PaneScroll: {x: 0, y: 0}
-        m_ViewType: 1
+        m_ViewType: 0
         m_UpdateViewLive: 0
         m_ProfilerViewFilteringOptions: 1
         m_FrameDataHierarchyView:
           m_Serialized: 1
           m_TreeViewState:
-            scrollPos: {x: 0, y: 181.59863}
-            m_SelectedIDs: 7e000000
-            m_LastClickedID: 126
-            m_ExpandedIDs: 01000000070000007d000000
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: d6000000
+            m_LastClickedID: 214
+            m_ExpandedIDs: 010000000700000041000000720000007d000000
             m_RenameOverlay:
               m_UserAcceptedRename: 0
               m_Name: 
@@ -942,20 +942,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Material
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Material
+  - Assets
   m_LastFoldersGridSize: 74
   m_LastProjectPath: /Users/taehyungkim/OneDrive/SourceTree/ProjectAce/ProjectAce
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c4370000
-    m_LastClickedID: 14276
-    m_ExpandedIDs: 00000000b4370000b6370000b8370000ba370000bc370000c6370000ca370000ce370000d037000000ca9a3b
+    m_SelectedIDs: 3c380000
+    m_LastClickedID: 14396
+    m_ExpandedIDs: 000000003c3800003e3800004038000042380000443800004c38000050380000703800007238000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -983,7 +983,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4370000b6370000b8370000ba370000bc370000
+    m_ExpandedIDs: 000000003c3800003e380000403800004238000044380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1106,9 +1106,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: e0faffff1afbffff20fbffff60fbfffff6330000
+      m_SelectedIDs: 02fbffff
+      m_LastClickedID: -1278
+      m_ExpandedIDs: fc23ffffdefafffffefaffff18fbffff1efbffff60fbfffffa33000024340000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1168,9 +1168,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 675.5575, y: 395.6446, z: 267.47168}
+    m_Target: {x: 466.32355, y: 339.39502, z: -14.781151}
     speed: 2
-    m_Value: {x: 675.5575, y: 395.6446, z: 267.47168}
+    m_Value: {x: 466.32355, y: 339.39502, z: -14.781151}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1220,9 +1220,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.008691332, y: -0.001188601, z: -0.000006026601, w: 0.99996156}
   m_Size:
-    m_Target: 626.22687
+    m_Target: 691.3611
     speed: 2
-    m_Value: 626.22687
+    m_Value: 691.3611
   m_Ortho:
     m_Target: 0
     speed: 2

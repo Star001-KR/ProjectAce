@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{1351B61E-FFC8-0FDD-DF67-DC4B58C221FF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/ButtonFieldUnit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/DeckSettingInit.cs">
     <Files>
-      <File FileName="Assets/Script/Enum/CommonEnum.cs" />
-      <File FileName="Assets/Script/UI/UIBGColor.cs" />
-      <File FileName="Assets/Script/UI/ButtonFieldUnit.cs" Line="49" Column="24" />
-      <File FileName="Assets/Script/Field/PlayerFieldDeck.cs" Line="32" Column="24" />
-      <File FileName="Assets/Script/Enum/TEMPUserDB.cs" Line="36" Column="44" NotebookId="1" />
-      <File FileName="Assets/Script/UI/UITab.cs" Line="34" Column="69" NotebookId="1" />
-      <File FileName="Assets/Script/Field/FieldState.cs" Line="44" Column="22" NotebookId="1" />
+      <File FileName="Assets/Script/Enum/CommonEnum.cs" Line="22" Column="2" />
+      <File FileName="Assets/Script/UI/UIBGColor.cs" Line="52" Column="46" />
+      <File FileName="Assets/Script/UI/ButtonFieldUnit.cs" Line="85" Column="13" />
+      <File FileName="Assets/Script/Field/PlayerFieldDeck.cs" Line="21" Column="1" />
+      <File FileName="Assets/Script/UI/DeckSettingInit.cs" Line="49" Column="9" />
+      <File FileName="Assets/Script/Enum/TEMPUserDB.cs" Line="57" Column="13" NotebookId="1" />
+      <File FileName="Assets/Script/UI/UITab.cs" Line="62" Column="10" NotebookId="1" />
+      <File FileName="Assets/UIDeckSaveButton.cs" Line="19" Column="9" NotebookId="1" />
+      <File FileName="Assets/Script/UI/UIButton.cs" Line="27" Column="6" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +21,7 @@
                 <Node name="Field" expanded="True" />
                 <Node name="Rules" expanded="True" />
                 <Node name="UI" expanded="True">
-                  <Node name="ButtonFieldUnit.cs" selected="True" />
+                  <Node name="DeckSettingInit.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -30,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1c56b5a8-b11c-4a6a-b85f-aaf6402faa6e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ab3fdd5f-3842-4125-94c7-52587ec53d01" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

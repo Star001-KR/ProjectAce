@@ -71,8 +71,11 @@
     <Compile Include="Assets\Script\Rules\GameRules.cs" />
     <Compile Include="Assets\Script\Rules\RobbyRules.cs" />
     <Compile Include="Assets\Script\UI\ButtonFieldUnit.cs" />
+    <Compile Include="Assets\Script\UI\DeckSettingInit.cs" />
     <Compile Include="Assets\Script\UI\UIBGColor.cs" />
+    <Compile Include="Assets\Script\UI\UIButton.cs" />
     <Compile Include="Assets\Script\UI\UITab.cs" />
+    <Compile Include="Assets\UIDeckSaveButton.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
