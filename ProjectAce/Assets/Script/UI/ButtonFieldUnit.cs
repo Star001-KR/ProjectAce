@@ -75,7 +75,7 @@ public class ButtonFieldUnit : MonoBehaviour
             currFieldState = EFieldState.Ally;
         else if (currFieldState == EFieldState.Ally)
             currFieldState = EFieldState.Enemy;
-        else if (currFieldState == EFieldState.Enemy)
+        else if (currFieldState == EFieldState.Enemy || currFieldState == EFieldState.Enemy_Start || currFieldState == EFieldState.Enemy_End)
             currFieldState = EFieldState.Empty;
         else
             Debug.Log("Can't Chage Field State!");

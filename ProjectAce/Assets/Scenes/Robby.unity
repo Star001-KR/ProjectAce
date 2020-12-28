@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ede467c9f3f4034ac6aabf1cf8f6e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectTabNum: {fileID: 998246619}
+  playerTab: {fileID: 998246619}
   deckSettingUI: {fileID: 1881175082}
 --- !u!1 &622234094
 GameObject:

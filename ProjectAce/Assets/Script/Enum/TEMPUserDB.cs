@@ -48,10 +48,10 @@ public static class TEMPUserDB
 
     public static void SetFieldState(string _playerName, int _posX, int _posY, EFieldState _state)
     {
-        if (_playerName == "Player1")
+        if (_playerName == "Player1" || _playerName == (0).ToString())
             FieldMap_Player1[_posX, _posY] = _state;
 
-        else if (_playerName == "Player2")
+        else if (_playerName == "Player2" || _playerName == (1).ToString())
             FieldMap_Player2[_posX, _posY] = _state;
 
         else
