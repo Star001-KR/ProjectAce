@@ -7,10 +7,15 @@ public class PlayerFieldDeck : MonoBehaviour
 {
     public EFieldState[,] FieldMap = new EFieldState[7,7];
 
+    private void Awake()
+    {
+        Init();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        Init();
+
     }
 
     // Update is called once per frame

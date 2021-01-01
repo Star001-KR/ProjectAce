@@ -16,7 +16,6 @@ public class FieldState : MonoBehaviour
     void Start()
     {
         Init();
-        GetObjectNum();
     }
 
     // Update is called once per frame
@@ -39,6 +38,11 @@ public class FieldState : MonoBehaviour
         fieldDeck = ParentObject.transform.parent.GetComponent<PlayerFieldDeck>();
 
         Player = ParentObject.transform.parent.parent.name;
+
+        GetObjectNum();
+
+        if (fieldDeck.GetFieldMap(ParentObjectNum - 1, ObjectNum - 1) != EFieldState.Enemy_Start)
+            transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void GetObjectNum()
