@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\AI\EnemyAI.cs" />
     <Compile Include="Assets\Script\Enum\CommonEnum.cs" />
     <Compile Include="Assets\Script\Enum\TEMPUserDB.cs" />
     <Compile Include="Assets\Script\Field\FieldState.cs" />

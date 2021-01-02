@@ -19,4 +19,11 @@ namespace CommonEnum
         Select
     }
 
+    public enum EEnemyMoveCourse
+    {
+        Up = 0,
+        Down,
+        Left,
+        Right
+    }
 }

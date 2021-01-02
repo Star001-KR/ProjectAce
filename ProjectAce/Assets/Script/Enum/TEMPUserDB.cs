@@ -22,9 +22,9 @@ public static class TEMPUserDB
     public static int[] endPoint_Player2 = new int[2] { 1, 0 };
     public static EFieldState[,] FieldMap_Player2 = new EFieldState[7, 7]
     {
-        {EFieldState.Enemy_Start, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
-        {EFieldState.Enemy_End, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
+        {EFieldState.Enemy_End, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
+        {EFieldState.Enemy_Start, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Ally, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},
         {EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty, EFieldState.Empty},

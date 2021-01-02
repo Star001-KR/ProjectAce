@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CommonEnum;
 
 public class GameRules : MonoBehaviour
 {
@@ -25,11 +26,9 @@ public class GameRules : MonoBehaviour
         timer += Time.deltaTime;
         if(timer > 5.0f)
         {
-            //EnemySpawn(EnemyObject[0], GetChildObject(Player[0], "SpawnPoint").transform);
-            EnemySpawn(EnemyObject[0], PlayerEnemy[0].transform);
+            EnemySpawn(EnemyObject[0]);
             timer = 0.0f;
         }
-
         ShadowRotation();
     }
 
@@ -50,10 +49,46 @@ public class GameRules : MonoBehaviour
         PlayerSwitch = true;
     }
 
-    private void EnemySpawn(GameObject _enemyObject, Transform _enemySpawnPoint)
+    //Player 1,2 모두 적 스폰
+    private void EnemySpawn(GameObject _enemyObject)
     {
-        GameObject _enemyClone = Instantiate(_enemyObject, _enemySpawnPoint);
-        _enemyClone.transform.SetParent(PlayerEnemy[0].transform);
+        PlayerFieldDeck[] _playerFieldDeck = new PlayerFieldDeck[2];
+        _playerFieldDeck[0] = GetChildObject(Player[0], "Field").GetComponent<PlayerFieldDeck>();
+        _playerFieldDeck[1] = GetChildObject(Player[1], "Field").GetComponent<PlayerFieldDeck>();
+
+        GameObject _targetParent1;
+        GameObject _targetParent2;
+
+        GameObject _enemyClone1;
+        GameObject _enemyClone2;
+
+        for (int Num1 = 0; Num1 < 7; Num1++)
+            for(int Num2 = 0; Num2 < 7; Num2++)
+            {
+                if(_playerFieldDeck[0].FieldMap[Num1,Num2] == EFieldState.Enemy_Start)
+                {
+                    _targetParent1 = _playerFieldDeck[0].transform.GetChild(Num1 + 1).gameObject;
+                    _targetParent1 = _targetParent1.transform.GetChild(Num2).gameObject;
+
+                    _enemyClone1 = Instantiate(_enemyObject, _targetParent1.transform.position, _targetParent1.transform.rotation);
+                    _enemyClone1.transform.SetParent(PlayerEnemy[0].transform);
+                }
+
+                if (_playerFieldDeck[1].FieldMap[Num1, Num2] == EFieldState.Enemy_Start)
+                {
+                    _targetParent2 = _playerFieldDeck[1].transform.GetChild(Num1 + 1).gameObject;
+                    _targetParent2 = _targetParent2.transform.GetChild(Num2).gameObject;
+
+                    _enemyClone2 = Instantiate(_enemyObject, _targetParent2.transform.position, _targetParent2.transform.rotation);
+                    _enemyClone2.transform.SetParent(PlayerEnemy[1].transform);
+                }
+            }
+    }
+
+    //지정한 Player 만 적 스폰
+    private void EnemySpawn(GameObject _Player, GameObject _enemyObject)
+    {
+        PlayerFieldDeck _playerFieldDeck = _Player.GetComponent<PlayerFieldDeck>();
     }
 
     private GameObject GetChildObject(GameObject _parentObject, string _childName)

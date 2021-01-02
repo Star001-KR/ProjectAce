@@ -40,9 +40,6 @@ public class FieldState : MonoBehaviour
         Player = ParentObject.transform.parent.parent.name;
 
         GetObjectNum();
-
-        if (fieldDeck.GetFieldMap(ParentObjectNum - 1, ObjectNum - 1) != EFieldState.Enemy_Start)
-            transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void GetObjectNum()
