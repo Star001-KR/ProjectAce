@@ -113,8 +113,6 @@ public class GameRules : MonoBehaviour
 
     private void ShadowRotation()
     {
-
-
         RotationAngle[0] += RotationSpeed[0];
         RotationAngle[1] += RotationSpeed[1];
 
