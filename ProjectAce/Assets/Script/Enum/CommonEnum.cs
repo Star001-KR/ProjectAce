@@ -24,6 +24,7 @@ namespace CommonEnum
         Up = 0,
         Down,
         Left,
-        Right
+        Right,
+        Stop
     }
 }

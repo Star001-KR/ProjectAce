@@ -64,13 +64,44 @@ public class EnemyAI : MonoBehaviour
 
     private EEnemyMoveCourse MoveCourceCheck()
     {
+        //맵의 한계점 체크
+        int _upValue = (currFieldLocation[0] == 6) ? -1 : 0;
+        int _downValue = (currFieldLocation[0] == 0) ? -1 : 0;
+        int _leftValue = (currFieldLocation[1] == 0) ? -1 : 0;
+        int _rightValue = (currFieldLocation[1] == 6) ? -1 : 0;
+
+        //방향별로 Empty 필드가 위치했는지 체크
+        if (_upValue != -1) _upValue = (fieldDeck.GetFieldMap(currFieldLocation[0] + 1, currFieldLocation[1]) != EFieldState.Enemy) ? -1 : _upValue;
+        if (_downValue != -1) _upValue = (fieldDeck.GetFieldMap(currFieldLocation[0] - 1, currFieldLocation[1]) != EFieldState.Enemy) ? -1 : _downValue;
+        if (_leftValue != -1) _upValue = (fieldDeck.GetFieldMap(currFieldLocation[0], currFieldLocation[1] - 1) != EFieldState.Enemy) ? -1 : _leftValue;
+        if (_rightValue != -1) _rightValue = (fieldDeck.GetFieldMap(currFieldLocation[0], currFieldLocation[1] + 1) != EFieldState.Enemy) ? -1 : _rightValue;
+
+        //이동 가능한 경로가 없을 경
+        if (_upValue == -1 && _downValue == -1 && _leftValue == -1 && _rightValue == -1)
+        {
+            Debug.Log("There Are No Pathes That Can Be Moved!");
+            return EEnemyMoveCourse.Stop;
+        }
+
+        //방향별 히스토리 체크
         int _up = MoveHistoryCheck(EEnemyMoveCourse.Up);
         int _down = MoveHistoryCheck(EEnemyMoveCourse.Down);
         int _left = MoveHistoryCheck(EEnemyMoveCourse.Left);
         int _right = MoveHistoryCheck(EEnemyMoveCourse.Right);
+        int _sumValue = 0;
+            _sumValue += (_upValue != -1) ? _up : 0;
+            _sumValue += (_downValue != -1) ? _down : 0;
+            _sumValue += (_leftValue != -1) ? _left : 0;
+            _sumValue += (_rightValue != -1) ? _right : 0;
 
-        Random _randomValue = new Random();
-        //_randomValue.
+
+
+        int _resultValue = Mathf.RoundToInt(Random.value * _sumValue - 0.5f);
+
+        if (_sumValue / _up > 0)
+        {
+            //if (_up )
+        }
 
         return EEnemyMoveCourse.Right;
     }
